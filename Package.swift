@@ -18,7 +18,7 @@ let package = Package(
         // Keep StableDiffusion on the same kernel-aware MLX revision as the app.
         .package(
             url: "https://github.com/JamesPriceZV/mlx-swift",
-            revision: "95c48ee"
+            revision: "bf141d9"
         ),
 
         // Note: used by StableDiffusion library to download weights
