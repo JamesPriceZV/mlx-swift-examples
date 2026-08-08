@@ -15,7 +15,11 @@ let package = Package(
             targets: ["StableDiffusion"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ml-explore/mlx-swift", .upToNextMinor(from: "0.31.4")),
+        // Keep StableDiffusion on the same kernel-aware MLX revision as the app.
+        .package(
+            url: "https://github.com/JamesPriceZV/mlx-swift",
+            revision: "9ec2c6625a383d6c77832e26a124c47c6dc1b888"
+        ),
 
         // Note: used by StableDiffusion library to download weights
         .package(
