@@ -26,7 +26,7 @@ let package = Package(
             url: "https://github.com/huggingface/swift-transformers",
             .upToNextMajor(from: "1.3.0")
         ),
-        .package(url: "https://github.com/1024jp/GzipSwift", "6.0.1" ... "6.0.1"),  // Only needed by MLXMNIST
+        .package(url: "https://github.com/1024jp/GzipSwift", "6.1.0" ... "6.1.0"),  // Only needed by MLXMNIST
     ],
     targets: [
         .target(
